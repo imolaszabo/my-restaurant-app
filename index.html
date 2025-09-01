@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="header-text">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers <br>and pizzas in town.</h2>
+            </div>
+        </header>
+        
+        <main>
+            <section id="menu-section"></section>
+            <section id="order-summary"></section>
+            <div id="thank-you-message"></div>
+            <div id="modal-div">
+                <form>
+                    <h1>Enter card details</h1>
+                    <label for="user-name" aria-label="user-name"></label>
+                    <input id="user-name" type="text" required placeholder="Enter your name">
+                    <label for="user-card-number" aria-label="user's credit card number"></label>
+                    <input id="user-card-number" type="number" required placeholder="Enter card number">
+                    <label for="user-cvv" aria-label="user's credit card's cvv code"></label>
+                    <input id="user-cvv" type="number" required placeholder="Enter CVV">
+                    <button class="green-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

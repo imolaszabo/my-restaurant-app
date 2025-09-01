@@ -1,0 +1,208 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+    width: 100%;
+    font-family: "Smythe", system-ui;
+    --light-grey: #8B8B8B;
+    font-weight: 100;
+} 
+
+header {
+    background-image: url("/hamburger.webp");
+    background-size: cover;
+    margin: 0;
+    padding: 3%;
+    height: 250px;
+    width: 600px;
+    color: white;
+    display: flex;   
+}
+
+#header-text > h1 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+#header-text > h2 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.menu-item > h1 {
+    font-size: 90px;
+    margin: auto;
+}
+
+.menu-item-details {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 5%;
+    line-height: 0%;
+}
+
+.ingredients {
+    color: var(--light-grey);
+}
+
+#menu-section {
+    margin: 0 auto;
+    width: 500px;
+    padding: 20px;
+}
+
+.plus-btn {
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid var(--light-grey);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    
+}
+
+#order-summary {
+    width: 500px;       /* same as #menu-section */
+    margin: 0 auto;     /* center it horizontally */
+    font-size: 13px;
+}
+
+#order-summary h1,
+#order-summary h2 {
+    margin: 8px 0px;
+    line-height: 1.2;
+}
+
+
+#order-title {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 0px; 
+    line-height: 0%;
+    align-items: center;
+    
+}
+
+.purchased-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.remove-btn {
+    border: none;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: var(--light-grey);
+    cursor: pointer;
+}
+
+#total {
+    border-top: 2px solid black;
+    padding-top: 10px;
+    margin: 20px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-self: auto;
+    align-items: center;
+}
+
+.green-btn {
+    display: block;
+    margin: 20px auto 40px auto;
+    padding: 10px; 
+    width: 508px;
+    height: 60px;
+    background-color: #16DB99;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#modal-div {
+    display: none;
+    width: 524px;
+    height: 542px;
+    background-color: white;
+    box-shadow: 0 0 20px #888888;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+#modal-div h1 {
+    margin: 50px;
+}
+
+input {
+    height: 20px;
+    width: 450px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    color: var(--light-grey);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pay-btn {
+    width: 488px;
+    
+}
+
+#thank-you-message {
+    display: none;
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+#thank-you-message h2 {
+   color: #065F46;
+    
+}
+
+#menu-section, #order-summary, #thank-you-message {
+    max-width: 500px;
+    width: 100%;
+}
