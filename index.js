@@ -5,6 +5,8 @@ const orderSummary = document.getElementById("order-summary")
 const modal = document.getElementById("modal-div")
 const userName = document.getElementById("user-name")
 const cart = []
+const inputs = document.querySelectorAll("input[required]")
+let allFilled = true
 
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains("plus-btn")) {
@@ -17,11 +19,23 @@ document.addEventListener('click', function(e) {
     else if (e.target.id === "complete-order-btn") {
         modal.style.display = "flex"
     } else if (e.target.id === "pay-btn") {
-        e.preventDefault()
-        handleFormData(userName.value)
-        modal.style.display = "none"
+        inputs.forEach(
+            (input) => {
+                if (!input.value.trim()) {
+                    allFilled = false
+                }
+            }
+        )
+        if (allFilled) {
+            e.preventDefault()
+            handleFormData(userName.value)
+            modal.style.display = "none"
+        } else {
+            alert("Please fill all fields!")
+        }
     }
 })
+
 
 const addItemToCart = (item) => {
     cart.push(item)
