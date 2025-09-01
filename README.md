@@ -1,19 +1,28 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+A simple yet functional food ordering web app built with HTML, CSS, and JavaScript. This was a solo project to solidify my knowledge gained so far. Regarding design, I have followed a Figma file.
+Users can add/remove menu items to their cart, view their total, and complete their order with a payment modal.
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+✨ Features
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+- Dynamic menu rendering
+- Cart management: add or remove items with automatic price updates
+- Order completion, payment form with validation
+- Personalised thank you message after order
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
-Happy Coding!
+📚 What I learned with the help of this project
+
+Building dynamic UIs with JavaScript DOM manipulation.
+Working with arrays and objects (map, findIndex, splice).
+Managing UI states (show/hide modal, thank-you message, empty cart).
+Writing cleaner, modular, and reusable code.
+
+🔮 Future Ideas/Improvements
+
+- Persist cart in localStorage
+- Add mobile responsiveness
+- Integrate with a real payment API
+
+👩‍💻 About Me
+
+I’m an aspiring developer passionate about creating interactive, user-friendly applications.
+This project is part of my coding journey where I apply JavaScript fundamentals in real-world scenarios.
