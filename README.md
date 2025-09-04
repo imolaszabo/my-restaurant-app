@@ -1,4 +1,4 @@
-A simple yet functional food ordering web app built with HTML, CSS, and JavaScript. This was a solo project to solidify my knowledge gained so far. Regarding design, I have followed a Figma file.
+A simple food ordering web app built with HTML, CSS, and JavaScript. This was a solo project to solidify my knowledge gained so far. Regarding design, I have followed a Figma file.
 Users can add/remove menu items to their cart, view their total, and complete their order with a payment modal.
 
 ✨ Features
